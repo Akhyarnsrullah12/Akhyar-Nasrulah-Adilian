@@ -318,3 +318,33 @@ Output dari program di atas adalah sebagai berikut:
 
 Nama: John Doe
 Usia: 20
+
+  
+#include <iostream>
+using namespace std;
+ 
+class mahasiswa{
+public:
+    int nim=1; //inisialisasi
+    string nama="default name"; //inisialisasi
+    float nilai=0; //inisialsiasi
+ 
+    void setterNilai (float aNilai){
+        nilai=aNilai;
+    }
+    void printData(){
+        cout<<"NIM   \t= "<<nim<<endl;
+        cout<<"Nama  \t= "<<nama<<endl;
+        cout<<"Nilai \t= "<<nilai<<endl;
+    }
+};
+ 
+int main() {
+    mahasiswa anton,budi;
+    cout<<"==Anton=="<<endl;
+    anton.printData();
+    cout<<"==Budi==="<<endl;
+    budi.printData();
+ 
+    return 0;
+}
